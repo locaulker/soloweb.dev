@@ -3,3 +3,5 @@ soloweb.dev.crt
 soloweb.dev.key
 *.psd
 *.zip
+node_modules/
+.DS_Store
