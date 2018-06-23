@@ -73,11 +73,11 @@ Home: Hero Video
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -141,11 +141,11 @@ Home: Hero Video
     text-transform: uppercase;
     margin: 0 6px;
     padding: 12px 46px;
-    transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .btn-home {
     color: #fff;
@@ -182,6 +182,9 @@ Content Boxes
 .content-box-lg {
   padding: 12rem 0;
 }
+.content-box-md {
+  padding: 10rem 0;
+}
 
 /* *********************************************
 Vertical Headings
@@ -193,11 +196,11 @@ Vertical Headings
   text-transform: uppercase;
   word-spacing: 5px;
   display: inline-block;
-  transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
   position: relative;
   top: 66px;
   left: -66px;
@@ -212,6 +215,7 @@ Vertical Headings
 /* *********************************************
 About: Section
 ********************************************* */
+  /* *********Part 01 ******* */
   #about-right p:first-child {
     margin-bottom: 3rem;
   }
@@ -222,3 +226,63 @@ About: Section
     margin: 0 auto;
     /* border: 1px dashed rgba(0, 128, 128, 0.5); */
   }
+
+  /* ********* About: Part 02 ******* */
+  #about-02 {
+    background-color: #F4F4F4;
+  }
+  .about-item {
+    background-color: #fff;
+    padding: 8rem 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .about-item i {
+    font-size: 4.2rem;
+    margin: 0;
+  }
+  .about-item h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  .about-item hr {
+    width: 4.5rem;
+    height: .2rem;
+    background-color: #F4C613;
+    margin: 0 auto;
+    border: none;
+  }
+  .about-item p {
+    margin-top: 2rem;
+  }
+
+    /* ********* About Part 02 - hover ******* */
+    .about-item:hover {
+      background-color: #F4C613;
+    }
+    .about-item:hover i,
+    .about-item:hover h3,
+    .about-item:hover p {
+      color: #fff;
+    }
+    .about-item:hover hr {
+      background: #fff;
+    }
+    .about-item:hover i {
+      transform: translateY(-20px)    ;
+      -webkit-transform: translateY(-20px)    ;
+      -moz-transform: translateY(-20px)    ;
+      -ms-transform: translateY(-20px)    ;
+      -o-transform: translateY(-20px)    ;
+}
+
+    /* ********* About Part 02 - smooth transition ******* */
+    .about-item,
+    .about-item i,
+    .about-item hr {
+      -webkit-transition: all 400ms ease-in-out;
+      -moz-transition: all 400ms ease-in-out;
+      -ms-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
+    }
+  
