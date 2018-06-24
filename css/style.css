@@ -74,9 +74,6 @@ Home: Hero Video
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   min-width: 100%;
   min-height: 100%;
@@ -142,9 +139,6 @@ Home: Hero Video
     margin: 0 6px;
     padding: 12px 46px;
     -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
     transition: all 0.5s;
   }
   .btn-home {
@@ -197,13 +191,10 @@ Vertical Headings
   word-spacing: 5px;
   display: inline-block;
   -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: relative;
   top: 66px;
-  left: -66px;
+  left: -52px;
 }
 .vertical-heading h2 {
   margin: 0 0 0 30px;
@@ -213,7 +204,7 @@ Vertical Headings
 }
 
 /* *********************************************
-About: Section
+Section: About
 ********************************************* */
   /* *********Part 01 ******* */
   #about-right p:first-child {
@@ -270,9 +261,6 @@ About: Section
     .about-item:hover i {
       transform: translateY(-20px)    ;
       -webkit-transform: translateY(-20px)    ;
-      -moz-transform: translateY(-20px)    ;
-      -ms-transform: translateY(-20px)    ;
-      -o-transform: translateY(-20px)    ;
 }
 
     /* ********* About Part 02 - smooth transition ******* */
@@ -280,9 +268,144 @@ About: Section
     .about-item i,
     .about-item hr {
       -webkit-transition: all 400ms ease-in-out;
-      -moz-transition: all 400ms ease-in-out;
-      -ms-transition: all 400ms ease-in-out;
-      -o-transition: all 400ms ease-in-out;
       transition: all 400ms ease-in-out;
     }
-  
+
+    
+/* *********************************************
+Section: Team
+********************************************* */
+#team-left .vertical-heading {
+  min-height: 16rem;
+}
+  /* Team members - info */
+  .team-member {
+    margin: 8px;
+    position: relative;
+  }
+  .team-member-overlay {
+    background-color: rgba(33,34,38,0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  .team-member-info {
+    width: 100%;
+    height: 100%;
+    margin: 8rem 0;
+  }
+  .team-member-info h6 {
+    color: #F4C613;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .team-member-info p {
+    color: #fff;
+  }
+  .team-member:hover .team-member-overlay {
+    opacity: 1;
+  }
+  /* Team Members: Social Icons */
+  ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+  }
+  ul.social-list li {
+    display: inline-block;
+    padding: 0;
+  }
+  ul.social-list li a {
+    border: 1px solid #fff;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+ul.social-list li:nth-child(1) a:hover {
+  background-color: #3b5998;
+  border-color: transparent;
+}
+ul.social-list li:nth-child(2) a:hover {
+  background-color: #00aced;
+  border-color: transparent;
+}
+ul.social-list li:nth-child(3) a:hover {
+  background-color: #dd4b39;
+  border-color: transparent;
+}
+
+/* *********************************************
+Section: Team Slider Buttons
+********************************************* */
+/* .owl-theme .owl-nav [class*=owl-], */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  color: #212226 !important;
+  font-size: 40px;
+  margin: 4px;
+  background: none;
+  line-height: 15px;
+  font-weight: 200;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+.owl-carousel .owl-nav:hover button.owl-prev,
+.owl-carousel .owl-nav:hover button.owl-next {
+  background: none;
+  color: #212226 !important;
+  outline: none;
+}
+
+/* *********************************************
+Section: Skillset
+********************************************* */
+/*  */
+.skill {
+  margin-bottom: 4rem;
+}
+.skill h4 {
+  line-height: 6.2rem;
+  margin: 0;
+  font-weight: normal;
+}
+.progress {
+  height: 2.5rem;
+  border-radius: 0;
+  background-color: #efefef;
+  overflow: visible;
+}
+.progress-bar {
+  background-color: #F4C613;
+  position: relative;
+}
+.progress-bar span {
+  font-size: 1.1rem;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
+  background-color: #212226;
+  padding: .3rem;
+  position: absolute;
+  left: 97%;
+  top: -47px;
+}
+.progress-bar span:before {
+  content: "";
+  border-top: 8px solid #212226;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 23%;
+}
