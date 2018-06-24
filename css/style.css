@@ -372,8 +372,9 @@ Section: Team Slider Buttons
 Section: Skillset
 ********************************************* */
 /*  */
-.skill {
-  margin-bottom: 4rem;
+.skill:first-child {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .skill h4 {
   line-height: 6.2rem;

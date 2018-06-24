@@ -7,11 +7,12 @@ $(window).on('load', function(){
   $('#preloader').delay(350).fadeOut('slow');
 });
 
-/* *********************************************
-Owl-Carousel: Team Members
-********************************************* */
+
 $(function(){
-  // $(".owl-carousel").owlCarousel();
+  /* *********************************************
+  Owl-Carousel: Team Members
+  ********************************************* */
+  // $(".owl-carousel").owlCarousel(); OR
   $("#team-members").owlCarousel({
     items: 2,
     // margin: 10,
@@ -25,4 +26,28 @@ $(function(){
     // navText: ['&larr;','&rarr;'],
     // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
   });
+
+
+  /* ****************************************************
+  Progress Bars Skillsets triggered by Waypoints Plugin
+  **************************************************** */
+  
+  $("#progress-elements").waypoint(function() {
+
+    $(".progress-bar").each(function(){
+      $(this).animate({
+        width: $(this).attr("aria-valuenow") + "%"
+      }, 1000);
+    });
+
+    this.destroy();
+  }, {
+    offset: 'bottom-in-view'
+  });
+
+
+
+
 });
+
+
