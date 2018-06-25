@@ -45,6 +45,15 @@ $(function(){
   });
 
 
+  /* ****************************************************
+  jQuery Responsive Tabs
+  **************************************************** */
+  $("#services-tabs").responsiveTabs({
+    animation: 'slide', // The panels will slide up and down
+    // duration: 1000
+  });
+
+
 
 
 });
