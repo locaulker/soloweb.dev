@@ -17,6 +17,7 @@ Global/Generic Styles: html, body
 ********************************************* */
 html, body {
   height: 100%;
+  cursor: pointer;
 }
 body {
   color: #212226;
@@ -181,7 +182,7 @@ Content Boxes
 }
 
 /* *********************************************
-Vertical Headings
+Vertical & Horizontal Headings
 ********************************************* */
 .vertical-heading h5 {
   color: #F4C613;
@@ -196,11 +197,27 @@ Vertical Headings
   top: 66px;
   left: -52px;
 }
+.horizontal-heading h2,
 .vertical-heading h2 {
-  margin: 0 0 0 30px;
   font-size: 4.2rem;
   font-weight: 100;
   line-height: 4.5rem;
+}
+.vertical-heading h2 {
+  margin: 0 0 0 30px;
+}
+.horizontal-heading {
+  margin-bottom: 8rem;
+}
+.horizontal-heading h5 {
+  font-size: 1.6rem;
+  color: #F4C613;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.horizontal-heading h2 {
+  margin: 0;
 }
 
 /* *********************************************
@@ -409,4 +426,64 @@ Section: Skillset
   position: absolute;
   bottom: -8px;
   left: 23%;
+}
+/* *********************************************
+Section: Statement
+********************************************* */
+#statement {
+  background: url('../img/tech/tech-quote.jpg') no-repeat fixed center;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; */
+  background-size: cover;
+}
+#statement .content-box-lg {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#statement h3 {
+  color: #fff;
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  font-weight: 100;
+}
+#statement p {
+  font-size: 1.4rem;
+  color: #F4C613;
+  font-family: "Raleway", sans-serif;
+  margin-top: .8rem;
+}
+
+/* *********************************************
+Section: Services
+********************************************* */
+#services-01 img {
+  margin: 6rem 0;
+}
+.service {
+  margin: 3.5rem 0;
+}
+.service .icon {
+  font-size: 4.2rem;
+  margin: 0;
+  transition: all 0.4s linear;
+}
+.service:hover .icon {
+  color: #F4C613;
+  transform: translateX(-2rem);
+}
+.service h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #F4C613;
+  margin: 0 0 0.6rem 0;
+}
+.service:hover h5 {
+  color: #212226;
+}
+.service h4 {
+  font-size: 2.4rem;
+  margin: 0 0 .8rem 0;
+}
+.service p {
+  line-height: normal;
 }

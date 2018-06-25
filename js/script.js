@@ -31,7 +31,6 @@ $(function(){
   /* ****************************************************
   Progress Bars Skillsets triggered by Waypoints Plugin
   **************************************************** */
-  
   $("#progress-elements").waypoint(function() {
 
     $(".progress-bar").each(function(){
