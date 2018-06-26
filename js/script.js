@@ -1,16 +1,56 @@
-/* *********************************************
-Preloader:                 
-(Animated Gif: https://loading.io)
-********************************************* */
+/*
+1. Preloader: (Animated Gif: https://loading.io)
+2. Portfolio: using isotope plugin
+3. Owl-Carousel: Team Members
+4. Progress Bars Skillsets triggered by Waypoints Plugin
+5. jQuery Responsive Tabs
+6. Magnifier: Magnific-Popup
+*/
+
+/* ****************************************************
+Window on load methods
+**************************************************** */
 $(window).on('load', function(){
+  /* *********************************************
+  1. Preloader: (Animated Gif: https://loading.io)
+  ********************************************* */
   $('#status').fadeOut();
   $('#preloader').delay(350).fadeOut('slow');
+
+
+  /* ****************************************************
+  2. Portfolio: using isotope plugin
+  **************************************************** */
+  // Initialize isotope
+  $("#isotope-container").isotope({
+    // options
+  });
+
+  // filter items on button click
+  $("#isotope-filters").on('click', 'button', function(){
+    // get filter value
+    var filterValue = $(this).attr('data-filter');
+    
+    // filter portfolio items
+    $("#isotope-container").isotope({
+      // options
+      filter: filterValue
+    });
+
+    // active class button
+    $("#isotope-filters").find('.active').removeClass('active');
+    $(this).addClass('active');
+
+  });
+
+
 });
 
 
+// document on load functions
 $(function(){
   /* *********************************************
-  Owl-Carousel: Team Members
+  3. Owl-Carousel: Team Members
   ********************************************* */
   // $(".owl-carousel").owlCarousel(); OR
   $("#team-members").owlCarousel({
@@ -29,7 +69,7 @@ $(function(){
 
 
   /* ****************************************************
-  Progress Bars Skillsets triggered by Waypoints Plugin
+  4. Progress Bars Skillsets triggered by Waypoints Plugin
   **************************************************** */
   $("#progress-elements").waypoint(function() {
 
@@ -46,13 +86,24 @@ $(function(){
 
 
   /* ****************************************************
-  jQuery Responsive Tabs
+  5. jQuery Responsive Tabs
   **************************************************** */
   $("#services-tabs").responsiveTabs({
     animation: 'slide', // The panels will slide up and down
     // duration: 1000
   });
 
+  /* ****************************************************
+  6. Magnifier: Magnific-Popup
+  **************************************************** */
+  $("#portfolio-wrapper").magnificPopup({
+    delegate: 'a', // child items selector, clicking opens a popup
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+    // other options
+  });
 
 
 
