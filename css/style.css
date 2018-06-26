@@ -17,7 +17,7 @@ Global/Generic Styles: html, body
 ********************************************* */
 html, body {
   height: 100%;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 body {
   color: #212226;
@@ -565,3 +565,13 @@ Section: Services 02 with Responsive Tabs
     line-height: 2.4rem;
     margin-bottom: 3rem;
   }
+
+/* *********************************************
+Section: Portfolio
+********************************************* */
+#portfolio .vertical-heading {
+  margin-bottom: 5rem;
+}
+.row.no-gutters [class*=col-] {
+  padding: 0;
+}
