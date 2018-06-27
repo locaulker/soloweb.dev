@@ -213,7 +213,7 @@ Vertical & Horizontal Headings
 }
 .horizontal-heading h2,
 .vertical-heading h2 {
-  font-size: 4.2rem;
+  font-size: 2.9rem;
   font-weight: 100;
   line-height: 4.5rem;
 }
@@ -569,6 +569,9 @@ Section: Services 02 with Responsive Tabs
 /* *********************************************
 Section: Portfolio
 ********************************************* */
+#portfolio {
+  padding-bottom: 16rem;
+}
 #portfolio .vertical-heading {
   margin-bottom: 5rem;
 }
@@ -634,7 +637,7 @@ Section: Portfolio
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
     opacity: 0;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
   }
   /* portfolio item details effect */
   .portfolio-item-details {
@@ -651,7 +654,7 @@ Section: Portfolio
     margin: 0;
     padding: 0;
     transform: translateY(-20%);
-    transition: all 0.8s;
+    transition: all 0.5s;
   }
   .portfolio-item-details span {
     display: inline-block;
@@ -668,7 +671,7 @@ Section: Portfolio
     margin: 0;
     padding: 0;
     transform: translateY(20%);
-    transition: all 0.8s;
+    transition: all 0.5s;
   }
   /* Show overlay on mouse-over */
   .portfolio-item:hover .portfolio-item-details h3 {
@@ -680,3 +683,52 @@ Section: Portfolio
   .portfolio-item:hover .portfolio-item-overlay {
     opacity: 1;
   }
+
+
+/* *********************************************
+Section: Testimonials
+********************************************* */
+#testimonials {
+  background-color: #F4F4F4;
+  padding-bottom: 1.5rem;
+  overflow: visible;
+}
+#testimonials .vertical-heading {
+  padding: 8rem 0;
+  margin-bottom: 5rem;
+}
+#testimonial-slider {
+  background-color: #F4C613;
+  top: -8rem;
+  padding-bottom: 3rem;
+}
+.testimonial .row {
+  margin-bottom: 2.5rem;
+}
+.testimonial {
+  padding: 2rem 4.5rem 0 4.5rem;
+  color: #fff;
+}
+.testimonial h3 {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+}
+.testimonial .stars {
+  font-size: 2rem;
+  color: #212226;
+  margin: 2rem 01rem 0;
+}
+.testimonial p {
+  line-height: normal;
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+.testimonial .author .author-name-des {
+  width: 13.8rem;
+  margin-top: 2.5rem;
+  text-align: left;
+}
+.testimonial .author .author-name-des p {
+  margin: 0;
+}

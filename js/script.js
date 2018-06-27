@@ -105,6 +105,24 @@ $(function(){
     // other options
   });
 
+  /* *********************************************
+  7. Owl-Carousel: Testimonials/Quality Support
+  ********************************************* */
+  // $(".owl-carousel").owlCarousel(); OR
+  $("#testimonial-slider").owlCarousel({
+    items: 1,
+    // margin: 10,
+    // loop: true,
+    rewind: true,
+    autoplay: false,
+    smartSpeed: 700,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+    // navText: ['&larr;','&rarr;'],
+    // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+  });
+
 
 
 });
