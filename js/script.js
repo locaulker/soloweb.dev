@@ -1,10 +1,13 @@
 /*
-1. Preloader: (Animated Gif: https://loading.io)
-2. Portfolio: using isotope plugin
-3. Owl-Carousel: Team Members
-4. Progress Bars Skillsets triggered by Waypoints Plugin
-5. jQuery Responsive Tabs
-6. Magnifier: Magnific-Popup
+01. Preloader: (Animated Gif: https://loading.io)
+02. Portfolio: using isotope plugin
+03. Owl-Carousel: Team Members
+04. Progress Bars Skillsets triggered by Waypoints Plugin
+05. jQuery Responsive Tabs
+06. Magnifier: Magnific-Popup
+07. Owl-Carousel: Testimonials/Quality Support
+08. jQuery CounterUP Plugin
+09. Owl-Carousel: Clients Section
 */
 
 /* ****************************************************
@@ -12,14 +15,14 @@ Window on load methods
 **************************************************** */
 $(window).on('load', function(){
   /* *********************************************
-  1. Preloader: (Animated Gif: https://loading.io)
+  01. Preloader: (Animated Gif: https://loading.io)
   ********************************************* */
   $('#status').fadeOut();
   $('#preloader').delay(350).fadeOut('slow');
 
 
   /* ****************************************************
-  2. Portfolio: using isotope plugin
+  02. Portfolio: using isotope plugin
   **************************************************** */
   // Initialize isotope
   $("#isotope-container").isotope({
@@ -50,7 +53,7 @@ $(window).on('load', function(){
 // document on load functions
 $(function(){
   /* *********************************************
-  3. Owl-Carousel: Team Members
+  03. Owl-Carousel: Team Members
   ********************************************* */
   // $(".owl-carousel").owlCarousel(); OR
   $("#team-members").owlCarousel({
@@ -69,7 +72,7 @@ $(function(){
 
 
   /* ****************************************************
-  4. Progress Bars Skillsets triggered by Waypoints Plugin
+  04. Progress Bars Skillsets triggered by Waypoints Plugin
   **************************************************** */
   $("#progress-elements").waypoint(function() {
 
@@ -94,7 +97,7 @@ $(function(){
   });
 
   /* ****************************************************
-  6. Magnifier: Magnific-Popup
+  06. Magnifier: Magnific-Popup
   **************************************************** */
   $("#portfolio-wrapper").magnificPopup({
     delegate: 'a', // child items selector, clicking opens a popup
@@ -106,7 +109,7 @@ $(function(){
   });
 
   /* *********************************************
-  7. Owl-Carousel: Testimonials/Quality Support
+  07. Owl-Carousel: Testimonials/Quality Support
   ********************************************* */
   // $(".owl-carousel").owlCarousel(); OR
   $("#testimonial-slider").owlCarousel({
@@ -123,6 +126,31 @@ $(function(){
     // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
   });
 
+  /* *********************************************
+  08. jQuery CounterUP Plugin: Stats Section
+  ********************************************* */
+  $(".counter").counterUp({
+    delay: 10,
+    time: 2000,
+    offset: 70
+  });
+
+  /* *********************************************
+  09. Owl-Carousel: Clients Section
+  ********************************************* */
+  $("#clients-list").owlCarousel({
+    items: 6,
+    // margin: 10,
+    // loop: true,
+    rewind: true,
+    autoplay: false,
+    smartSpeed: 700,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+    // navText: ['&larr;','&rarr;'],
+    // navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>']
+  });
 
 
 });

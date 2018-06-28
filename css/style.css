@@ -10,10 +10,30 @@
       White:                      #FFFFFF
       Black:                      #000000
     --------------------------------------------
+01. Global/Generic Styles: html, body
+02. Preloader: (Animated Gif: https://loading.io)
+03. Home: Hero Video
+    03-1. Vertically Centering Elements
+    03-2. Styling the Elements
+04. Buttons
+05. Content Boxes
+06. Vertical & Horizontal Headings
+07. Section: About
+08. Section: Team
+09. Section: Team Slider Buttons
+10. Section: Skillset
+11. Section: Statement
+12. Section: Services
+13. Section: Services 02 with Responsive Tabs
+14. Section: Portfolio
+15. Section: Testimonials
+16. Section: Pricing Table
+17. Section: Stats
+18. Section: Clients
 ********************************************* */
 
 /* *********************************************
-Global/Generic Styles: html, body
+01. Global/Generic Styles: html, body
 ********************************************* */
 html, body {
   height: 100%;
@@ -37,8 +57,7 @@ section {
 }
 
 /* *********************************************
-Preloader:                 
-(Animated Gif: https://loading.io)
+02. Preloader: (Animated Gif: https://loading.io)
 ********************************************* */
 #preloader {
   background-color: #fff;
@@ -63,7 +82,7 @@ Preloader:
 }
 
 /* *********************************************
-Home: Hero Video
+03. Home: Hero Video
 ********************************************* */
 #home {
   background: none;
@@ -99,7 +118,7 @@ Home: Hero Video
 }
 
   /* *******************************
-    Vertically Centering Elements
+  03-1.  Vertically Centering Elements
     -------------------------------- */
   #home-content { /* parent element */
     width: 100vw;
@@ -111,7 +130,9 @@ Home: Hero Video
     vertical-align: middle;
   }
 
-  /* Styling the Elements */
+  /* *******************************
+  03-2. Styling the Elements
+  ---------------------------------- */
   #home-heading h1 {
     color: #fff;
     font-size: 4.0625rem;
@@ -131,9 +152,9 @@ Home: Hero Video
     margin: 8px 0 30px 0;
   }
 
-  /* **********************************
-   Buttons 
-  ************************************* */
+/* **********************************
+04. Buttons 
+************************************* */
   .btn-general {
     font-family: "Raleway", sans-serif;
     border-radius: 28px;
@@ -200,7 +221,7 @@ Home: Hero Video
   }
 
 /* *********************************************
-Content Boxes
+05. Content Boxes
 ********************************************* */
 .content-box-lg {
   padding: 12rem 0;
@@ -208,9 +229,12 @@ Content Boxes
 .content-box-md {
   padding: 10rem 0;
 }
+.content-box-sm {
+  padding: 9rem 0;
+}
 
 /* *********************************************
-Vertical & Horizontal Headings
+06. Vertical & Horizontal Headings
 ********************************************* */
 .vertical-heading h5 {
   color: #F4C613;
@@ -249,7 +273,7 @@ Vertical & Horizontal Headings
 }
 
 /* *********************************************
-Section: About
+07. Section: About
 ********************************************* */
   /* *********Part 01 ******* */
   #about-right p:first-child {
@@ -318,7 +342,7 @@ Section: About
 
     
 /* *********************************************
-Section: Team
+08. Section: Team
 ********************************************* */
 #team-left .vertical-heading {
   min-height: 16rem;
@@ -392,7 +416,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 /* *********************************************
-Section: Team Slider Buttons
+09. Section: Team Slider Buttons
 ********************************************* */
 /* .owl-theme .owl-nav [class*=owl-], */
 .owl-carousel .owl-nav button.owl-prev,
@@ -414,7 +438,7 @@ Section: Team Slider Buttons
 }
 
 /* *********************************************
-Section: Skillset
+10. Section: Skillset
 ********************************************* */
 /*  */
 .skill:first-child {
@@ -456,7 +480,7 @@ Section: Skillset
   left: 23%;
 }
 /* *********************************************
-Section: Statement
+11. Section: Statement
 ********************************************* */
 #statement {
   background: url('../img/tech/tech-quote.jpg') no-repeat fixed center;
@@ -482,7 +506,7 @@ Section: Statement
 }
 
 /* *********************************************
-Section: Services
+12. Section: Services
 ********************************************* */
 #services-01 img {
   margin: 6rem 0;
@@ -517,7 +541,7 @@ Section: Services
 }
 
 /* *********************************************
-Section: Services 02 with Responsive Tabs
+13. Section: Services 02 with Responsive Tabs
 ********************************************* */
 #services-02 {
   background-color: #F4F4F4;
@@ -581,7 +605,7 @@ Section: Services 02 with Responsive Tabs
   }
 
 /* *********************************************
-Section: Portfolio
+14. Section: Portfolio
 ********************************************* */
 #portfolio {
   padding-bottom: 16rem;
@@ -700,7 +724,7 @@ Section: Portfolio
 
 
 /* *********************************************
-Section: Testimonials
+15. Section: Testimonials
 ********************************************* */
 #testimonials {
   background-color: #F4F4F4;
@@ -748,7 +772,7 @@ Section: Testimonials
 }
 
 /* *********************************************
-Section: Pricing Table
+16. Section: Pricing Table
 ********************************************* */
 .pricing-table {
   -webkit-box-shadow: 0 0 1.0rem 0 rgba(0, 0, 0, 0.1);
@@ -849,3 +873,71 @@ Section: Pricing Table
   .pricing-table.black:hover {
     background-color: #F4C613;
   }
+
+/* *********************************************
+17. Section: Stats
+********************************************* */
+#stats {
+  background: url("../img/stats/stats-bg.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+#stats .content-box-md {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#stats .vertical-heading h2 {
+  color: #fff;
+}
+#stats .stats-item {
+  background-color: rgba(61, 68, 68, 0.5);
+  border-radius: 0.5rem;
+  min-height: 17rem;
+  padding: 2.5rem 5rem;
+  margin-top: 5rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+#stats .stats-item i {
+  font-size: 4.2rem;
+  color: #F4C613;
+  margin-bottom: 0.6rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+#stats .stats-item h3 {
+  font-size: 3.2rem;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+#stats .stats-item p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#stats .stats-item:hover {
+  background-color: #F4C613;
+}
+#stats .stats-item:hover i {
+  -webkit-transform: translateY(-2rem);
+  transform: translateY(-2rem);
+  color: #212226;
+}
+
+/* *********************************************
+18. Section: Clients
+********************************************* */
+#clients .horizontal-heading {
+  margin-bottom: 3rem;
+}
+#clients #clients-list {
+  padding: 4.5rem 0 0 0; 
+}
+#clients .client {
+  padding: 0 1rem;
+  max-width: 15rem;
+  margin: 0 auto;
+  line-height: 10rem;
+}
+#clients img {
+  display: inline-block !important;
+}
