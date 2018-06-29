@@ -139,7 +139,7 @@ $(function(){
   09. Owl-Carousel: Clients Section
   ********************************************* */
   $("#clients-list").owlCarousel({
-    items: 6,
+    items: 4,
     // margin: 10,
     // loop: true,
     rewind: true,

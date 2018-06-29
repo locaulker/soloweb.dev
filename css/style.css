@@ -30,6 +30,7 @@
 16. Section: Pricing Table
 17. Section: Stats
 18. Section: Clients
+19. Section: Blog
 ********************************************* */
 
 /* *********************************************
@@ -940,4 +941,63 @@ ul.social-list li:nth-child(3) a:hover {
 }
 #clients img {
   display: inline-block !important;
+}
+
+/* *********************************************
+19. Section: Blog
+********************************************* */
+#blog {
+  background-color: #F4F4F4;
+}
+#blog #blog-left p {
+  margin: 2.5rem 0;
+}
+#blog #blog-btn a {
+  margin: 0;
+}
+#blog .blog-post {
+  background-color: #fff;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+}
+#blog .blog-post h4 {
+  line-height: 4rem;
+  margin: 0;
+  font-weight: 700;
+}
+#blog .blog-post > p {
+  line-height: 2.4rem;
+  font-weight: 300;
+}
+#blog .blog-post a {
+  display: inline-block;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  color: #F4C613;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  border: 1px solid #F4C613;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+}
+#blog .blog-post a:hover {
+  color: #fff;
+  background-color: #F4C613;
+}
+#blog .post-meta {
+  border-top: 1px solid #E0E0E0;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+#blog .post-meta p {
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 2.4rem;
+  font-weight: 500;
+  margin: 0;
 }
